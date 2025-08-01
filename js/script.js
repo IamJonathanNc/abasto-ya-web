@@ -6,12 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
         whatsappButton.addEventListener('click', function(event) {
             event.preventDefault(); // Evita que el enlace # recargue la página
 
-            // >>> ¡NÚMERO DE TELÉFONO ACTUALIZADO! <<<
-            // Solo dígitos, sin espacios ni el signo '+' al inicio.
-            // Para '+591 71045259' usamos '59171045259'
-            const phoneNumber = '59171045259'; // TU NÚMERO DE WHATSAPP REAL
+            const phoneNumber = '59171045259'; // TU NÚMERO DE WHATSAPP REAL (confirmado)
 
-            const message = encodeURIComponent('Hola Abasto Ya! Estoy interesado/a en sus productos de frutas y verduras. ¿Podrían darme más información?'); // Mensaje predefinido
+            // >>> MENSAJE PREDEFINIDO ACTUALIZADO <<<
+            const message = encodeURIComponent('Hola Abasto Ya! Quiero hacer un pedido de frutas y verduras. ¿Cómo puedo enviarles mi lista?'); 
             
             // Construir la URL de WhatsApp
             const whatsappWebUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
